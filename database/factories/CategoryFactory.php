@@ -7,6 +7,9 @@ use Faker\Generator as Faker;
 
 $factory->define(Category::class, function (Faker $faker) {
     return [
-        'name' => $faker->words(2, true)
+        //'name' => $faker->words();
+        'name' => $faker->text(20)
+        
+
     ];
 });
